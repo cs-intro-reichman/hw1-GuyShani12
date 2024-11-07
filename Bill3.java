@@ -10,6 +10,6 @@ public class Bill3 {
 		//Price
 		double price = Double.parseDouble(args[3]);
 
-		System.out.println("dear " + name1 + "," + name2 + "," + name3 + " you need to pay: " + Math.ceil(price / 3));
+		System.out.println("dear " + name1 + "," + name2 + "," + name3 + ": pay " + Math.ceil(price / 3) + "Shekels each");
 	}
 }
