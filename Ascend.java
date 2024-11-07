@@ -13,13 +13,11 @@ public class Ascend {
 		
 		System.out.print(x);
 		System.out.print(" " + y);
-		System.out.print(" " + z);
+		System.out.println(" " + z);
 
 		int min = Math.min(Math.min(x, y), Math.min(z, y));
 		int max = Math.max(Math.max(x, y), Math.max(z, y));
 		int mid = (x + y + z) - (max + min);
-		System.out.print(min);
-		System.out.print(" " + mid);
-		System.out.print(" " + max);
+		System.out.println(min + " " + mid + " " + max);
 	}
 }
