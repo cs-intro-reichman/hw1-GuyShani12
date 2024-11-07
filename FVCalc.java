@@ -2,7 +2,7 @@
 public class FVCalc {
 	public static void main(String[] args){
 		// The current amount of money invested
-		int currentValue = Integer.parseInt(args[0]);
+		double currentValue = Double.parseDouble(args[0]);
 		// Precentage of interest
 		double rate = Double.parseDouble(args[1]);
 		// Number of years
