@@ -2,7 +2,7 @@
 public class FVCalc {
 	public static void main(String[] args){
 		// The current amount of money invested
-		double currentValue = Double.parseDouble(args[0]);
+		int currentValue = Integer.parseInt(args[0]);
 		// Precentage of interest
 		double rate = Double.parseDouble(args[1]);
 		// Number of years
@@ -10,7 +10,7 @@ public class FVCalc {
 		// Calculate the future value
 		double futureValue = Math.pow((1 + rate/100), n) * currentValue;
 
-		System.out.println("After " + n +" years, " + currentValue + "$ saved at " + rate +
+		System.out.println("After " + n +" years, a $" + currentValue + " saved at " + rate +
 		 "% will yield $" + (int) futureValue);
 	}
 }
