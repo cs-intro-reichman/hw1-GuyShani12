@@ -8,7 +8,11 @@ public class TimeFormat {
 		{
 			if (hours < 10 && minutes < 10)
 				System.out.print("0" + hours + ":0" + minutes +" AM");
-			if (hours < 10)
+				else if (hours == 0 && minutes < 10)
+				System.out.print(hours + ":0" + minutes +" AM");
+				else if (hours == 0 && minutes > 10)
+				System.out.print(hours + ":" + minutes +" AM");
+			if ((hours < 10 && hours != 0) && minutes > 10)
 				System.out.print("0" + hours + ":" + minutes + " AM");
 				else if (hours >= 12)
 				System.out.print((hours - 12) + ":0" + minutes +" PM");
