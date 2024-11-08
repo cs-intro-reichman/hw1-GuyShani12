@@ -6,17 +6,24 @@ public class TimeFormat {
 
 		if (hours < 10 || minutes < 10)
 		{
-			if (hours < 10 && minutes < 10)
-				System.out.print(hours + ":0" + minutes +" AM");
-				else if (hours == 0 && minutes < 10)
-				System.out.print(hours + ":0" + minutes +" AM");
-			if ((hours < 10 && hours != 0) && minutes > 10)
-				System.out.print(hours + ":" + minutes + " AM");
-				else if (hours >= 12)
+			if (hours >= 12)
+			{
+				if (hours == 12)
+				System.out.print(hours + ":0" + minutes +" PM");
+				else
 				System.out.print((hours - 12) + ":0" + minutes +" PM");
+			}
+				else if (hours > 10)
+				System.out.print(hours + ":0" + minutes +" AM");
+				else if (minutes > 10)
+				System.out.print(hours + ":" + minutes +" AM");
+			if (minutes > 10)
+				System.out.print(hours + ":" + minutes + " AM");
 	    }
 		else if (hours >= 12)
 		System.out.print((hours - 12) + ":" + minutes + " PM");
+		else if (hours == 12)
+				System.out.print(hours + ":0" + minutes +" PM");
 		else 
 		System.out.print(hours + ":" + minutes + " AM");
 	}
